@@ -6,7 +6,9 @@ import { Suspense } from 'react';
 export default async function Page({ params }) {
   return (
     <>
-      <PlaneDetails params={params} />
+      <Suspense fallback={<FlightSkeleton />}>
+        <PlaneDetails params={params} />
+      </Suspense>
       <Suspense fallback={<FlightSkeleton />}>
         <FlightActivity params={params} />
       </Suspense>

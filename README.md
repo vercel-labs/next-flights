@@ -17,6 +17,7 @@ Created by [@matiasngf](https://github.com/matiasngf) and [@delbaoliveira](https
 
 - `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN`: The map is generated using [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/).
 - `FLIGHT_RADAR_TOKEN`: Real flight tracking data is provided by [flightradar24.com](https://www.flightradar24.com/). It requires a [subscription](https://fr24api.flightradar24.com/subscriptions-and-credits), but also provides a sandbox key.
+- `FLIGHT_RADAR_SANDBOX_FLAG`: Set this to `true` to use the sandbox environment of the FlightRadar24 API, which provides mock data for testing purposes. Set it to `false` to use the live environment.
 - `AVIATIONSTACK_API_TOKEN`: The specific flight data is provided by [aviationstack.com](https://aviationstack.com/). The personal subscription is **free**. However, we found the API was unreliable, and to reduce the risk of showing an incomplete flight informationduring the keynote, we used mock data.
 
 3. Navigate to [http://localhost:3000/explore/sfo](http://localhost:3000/explore/sfo) to see the demo.

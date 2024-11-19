@@ -1,7 +1,11 @@
 "use server"
 
 export async function getFlightTracks(id: string) {
-  const baseUrl = 'https://fr24api.flightradar24.com/api/flight-tracks';
+  const SANDBOX: boolean = process.env.FLIGHT_RADAR_SANDBOX_FLAG === 'true' ? true : false;
+
+  const baseUrl = SANDBOX ? 'https://fr24api.flightradar24.com/api/sandbox/flight-tracks' : 'https://fr24api.flightradar24.com/api/flight-tracks';
+
+  console.log('baseUrl', SANDBOX, baseUrl);
 
   const query = new URLSearchParams({ flight_id: id });
 

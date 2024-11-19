@@ -5,8 +5,11 @@ export async function getFlights(params: Promise<{ airport: string }>) {
   const { airport } = await params;
   const { latitude, longitude } = geocode(airport);
 
-  const baseUrl =
-    'https://fr24api.flightradar24.com/api/live/flight-positions/full';
+  const SANDBOX: boolean = process.env.FLIGHT_RADAR_SANDBOX_FLAG === 'true' ? true : false;
+
+  const baseUrl = SANDBOX ? 'https://fr24api.flightradar24.com/api/sandbox/live/flight-positions/full' : 'https://fr24api.flightradar24.com/api/live/flight-positions/full';
+
+  console.log('baseUrl', SANDBOX, baseUrl);
 
   const query = new URLSearchParams({
     bounds: getBounds(latitude, longitude), // show planes within 60km of airport
