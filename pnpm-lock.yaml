@@ -30,8 +30,8 @@ importers:
         specifier: ^5.0.7
         version: 5.0.7
       next:
-        specifier: ^15.6.0-canary.58
-        version: 15.6.0-canary.58(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 15.6.0-canary.60
+        version: 15.6.0-canary.60(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18
         version: 18.3.1
@@ -264,8 +264,8 @@ packages:
     resolution: {integrity: sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q==}
     engines: {node: '>=6.0.0'}
 
-  '@next/env@15.6.0-canary.58':
-    resolution: {integrity: sha512-JyYhiCaCYgLfs3a195cncgUfyATTvtIpK2L9wpka4JdJ/Cn58LxO2WRQysmWYXWjuCTgE9n4vjWDAJcWmRisiw==}
+  '@next/env@15.6.0-canary.60':
+    resolution: {integrity: sha512-VVoy8NpkI2ngEr3RsD8jzum8SbXisObkvcCMBJeiWRSMOtACIm6kbnTYjgLWeGEwHHKsVBdeJpnf558rF6ktbw==}
 
   '@next/swc-darwin-arm64@15.6.0-canary.58':
     resolution: {integrity: sha512-jGawwiKITJHOH8dSbTqfjVvCf+DesljZhtvh9LKCrO+1octLlGyDAbEQw5WEzrXCch5LWrdSqPyKft0/9LeniA==}
@@ -637,8 +637,8 @@ packages:
     engines: {node: ^18 || >=20}
     hasBin: true
 
-  next@15.6.0-canary.58:
-    resolution: {integrity: sha512-crPQo+AxBCmmBFMpDLbFg1uH+ArvrPNkvsviM60wrlzmhNuQyIOQ0tHL7Y10BVlxqtM7esMDQnepKT1XJBqYBQ==}
+  next@15.6.0-canary.60:
+    resolution: {integrity: sha512-E5gKHda+vdACO+/Bv53V3qcMrhmhH8UuctFSbNeCvnIfPoWPEUMHCB+hok7qxRlKwclXoQ5SUgUdgi6Ayzu5uA==}
     engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
@@ -1154,7 +1154,7 @@ snapshots:
 
   '@mapbox/whoots-js@3.1.0': {}
 
-  '@next/env@15.6.0-canary.58': {}
+  '@next/env@15.6.0-canary.60': {}
 
   '@next/swc-darwin-arm64@15.6.0-canary.58':
     optional: true
@@ -1493,9 +1493,9 @@ snapshots:
 
   nanoid@5.0.7: {}
 
-  next@15.6.0-canary.58(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  next@15.6.0-canary.60(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@next/env': 15.6.0-canary.58
+      '@next/env': 15.6.0-canary.60
       '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001668
       postcss: 8.4.31
